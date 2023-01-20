@@ -9,6 +9,10 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    static var originalAppDelegate : AppDelegate!
+    func sharedInstance() -> AppDelegate{
+        return AppDelegate.originalAppDelegate
+    }
 
 
 

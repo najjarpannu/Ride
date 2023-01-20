@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B002D93929770A1200DDC7E5 /* CarbonEmissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002D93829770A1200DDC7E5 /* CarbonEmissionVC.swift */; };
+		B002D93D2979062100DDC7E5 /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002D93C2979062000DDC7E5 /* PopUpVC.swift */; };
+		B07E2FFA2970AC7600C8B3EF /* RandomVchl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E2FF92970AC7600C8B3EF /* RandomVchl.swift */; };
+		B07E2FFD2970B32C00C8B3EF /* VehicleListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E2FFC2970B32C00C8B3EF /* VehicleListVC.swift */; };
+		B07E30032970E09F00C8B3EF /* VehicleDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E30022970E09F00C8B3EF /* VehicleDetailsVC.swift */; };
 		B0831F722970839800D8E73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F712970839800D8E73A /* AppDelegate.swift */; };
 		B0831F742970839800D8E73A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F732970839800D8E73A /* SceneDelegate.swift */; };
-		B0831F762970839800D8E73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F752970839800D8E73A /* ViewController.swift */; };
 		B0831F792970839800D8E73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0831F772970839800D8E73A /* Main.storyboard */; };
 		B0831F7B297083A000D8E73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0831F7A297083A000D8E73A /* Assets.xcassets */; };
 		B0831F7E297083A000D8E73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0831F7C297083A000D8E73A /* LaunchScreen.storyboard */; };
 		B0831F89297083A100D8E73A /* RidesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F88297083A100D8E73A /* RidesTests.swift */; };
 		B0831F93297083A100D8E73A /* RidesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F92297083A100D8E73A /* RidesUITests.swift */; };
 		B0831F95297083A100D8E73A /* RidesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831F94297083A100D8E73A /* RidesUITestsLaunchTests.swift */; };
+		B0831FAE2970A42600D8E73A /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0831FAD2970A42600D8E73A /* VehicleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B002D93829770A1200DDC7E5 /* CarbonEmissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonEmissionVC.swift; sourceTree = "<group>"; };
+		B002D93C2979062000DDC7E5 /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
+		B07E2FF92970AC7600C8B3EF /* RandomVchl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomVchl.swift; sourceTree = "<group>"; };
+		B07E2FFC2970B32C00C8B3EF /* VehicleListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListVC.swift; sourceTree = "<group>"; };
+		B07E30022970E09F00C8B3EF /* VehicleDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailsVC.swift; sourceTree = "<group>"; };
 		B0831F6E2970839800D8E73A /* Rides.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rides.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0831F712970839800D8E73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0831F732970839800D8E73A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0831F752970839800D8E73A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0831F782970839800D8E73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0831F7A297083A000D8E73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0831F7D297083A000D8E73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,7 @@
 		B0831F8E297083A100D8E73A /* RidesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RidesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0831F92297083A100D8E73A /* RidesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITests.swift; sourceTree = "<group>"; };
 		B0831F94297083A100D8E73A /* RidesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0831FAD2970A42600D8E73A /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B07E2FFB2970B2FD00C8B3EF /* OnBoardVC */ = {
+			isa = PBXGroup;
+			children = (
+				B07E2FFC2970B32C00C8B3EF /* VehicleListVC.swift */,
+				B07E30022970E09F00C8B3EF /* VehicleDetailsVC.swift */,
+				B002D93829770A1200DDC7E5 /* CarbonEmissionVC.swift */,
+				B002D93C2979062000DDC7E5 /* PopUpVC.swift */,
+			);
+			path = OnBoardVC;
+			sourceTree = "<group>";
+		};
 		B0831F652970839800D8E73A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +104,7 @@
 				B0831F87297083A100D8E73A /* RidesTests */,
 				B0831F91297083A100D8E73A /* RidesUITests */,
 				B0831F6F2970839800D8E73A /* Products */,
+				B8E6CF6C0F3FD975E083E66F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +123,9 @@
 			children = (
 				B0831F712970839800D8E73A /* AppDelegate.swift */,
 				B0831F732970839800D8E73A /* SceneDelegate.swift */,
-				B0831F752970839800D8E73A /* ViewController.swift */,
+				B0831FA4297087D700D8E73A /* Models */,
+				B0831FA12970849A00D8E73A /* ViewModel */,
+				B07E2FFB2970B2FD00C8B3EF /* OnBoardVC */,
 				B0831F772970839800D8E73A /* Main.storyboard */,
 				B0831F7A297083A000D8E73A /* Assets.xcassets */,
 				B0831F7C297083A000D8E73A /* LaunchScreen.storyboard */,
@@ -125,6 +149,29 @@
 				B0831F94297083A100D8E73A /* RidesUITestsLaunchTests.swift */,
 			);
 			path = RidesUITests;
+			sourceTree = "<group>";
+		};
+		B0831FA12970849A00D8E73A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0831FAD2970A42600D8E73A /* VehicleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0831FA4297087D700D8E73A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B07E2FF92970AC7600C8B3EF /* RandomVchl.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8E6CF6C0F3FD975E083E66F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0831F762970839800D8E73A /* ViewController.swift in Sources */,
+				B002D93D2979062100DDC7E5 /* PopUpVC.swift in Sources */,
+				B07E2FFA2970AC7600C8B3EF /* RandomVchl.swift in Sources */,
+				B07E30032970E09F00C8B3EF /* VehicleDetailsVC.swift in Sources */,
+				B0831FAE2970A42600D8E73A /* VehicleViewModel.swift in Sources */,
 				B0831F722970839800D8E73A /* AppDelegate.swift in Sources */,
 				B0831F742970839800D8E73A /* SceneDelegate.swift in Sources */,
+				B002D93929770A1200DDC7E5 /* CarbonEmissionVC.swift in Sources */,
+				B07E2FFD2970B32C00C8B3EF /* VehicleListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
