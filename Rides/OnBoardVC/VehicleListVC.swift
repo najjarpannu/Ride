@@ -42,7 +42,6 @@ class VehicleListVC: UIViewController,UITextFieldDelegate, SortCarsDelegateVC {
     
     func validateNumber(){
         let number =  Int(mSearchTxtFld.text!)
-        
         if  number != nil && number! > 0 && number! <= 100 {
             mSortBtn.isHidden = false
             let number = mSearchTxtFld.text!
@@ -53,10 +52,7 @@ class VehicleListVC: UIViewController,UITextFieldDelegate, SortCarsDelegateVC {
                 alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
                 self.present(alert, animated: true, completion: nil)
         }
-        
     }
-
-
 }
 extension VehicleListVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
