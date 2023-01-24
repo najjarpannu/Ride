@@ -37,8 +37,13 @@ class VehicleListVC: UIViewController,UITextFieldDelegate, SortCarsDelegateVC {
             }
     @IBAction func mSearchBtnActn(_ sender: Any) {
         mSearchTxtFld.resignFirstResponder()
-//        checking for value in range
-        if Int(mSearchTxtFld.text!) != nil && Int(mSearchTxtFld.text!)! > 0 && Int(mSearchTxtFld.text!)! <= 100 {
+        validateNumber()
+    }
+    
+    func validateNumber(){
+        let number =  Int(mSearchTxtFld.text!)
+        
+        if  number != nil && number! > 0 && number! <= 100 {
             mSortBtn.isHidden = false
             let number = mSearchTxtFld.text!
             vehicleData.getVehicleData(number: number)
@@ -48,25 +53,18 @@ class VehicleListVC: UIViewController,UITextFieldDelegate, SortCarsDelegateVC {
                 alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
                 self.present(alert, animated: true, completion: nil)
         }
+        
     }
+
 
 }
 extension VehicleListVC:UITableViewDelegate,UITableViewDataSource{
-   
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return self.mainArray.count    }
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-   
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = mTableView.dequeueReusableCell(withIdentifier: "VehiclelistTableCellVC", for: indexPath) as! VehiclelistTableCellVC
         let data = self.mainArray[indexPath.row]
         cell.mCellView.layer.cornerRadius = 5
@@ -89,7 +87,6 @@ extension VehicleListVC:UITableViewDelegate,UITableViewDataSource{
     }
 }
 class VehiclelistTableCellVC: UITableViewCell {
-
     @IBOutlet weak var mMakeAndModelTxt: UILabel!
     @IBOutlet weak var mCellView: UIView!
     @IBOutlet weak var mVinNumber: UILabel!

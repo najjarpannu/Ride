@@ -6,9 +6,16 @@
 //
 
 import XCTest
-
+@testable import Rides
 final class ValidationsXCTestVC: XCTestCase {
-
+    var testClass: VehicleListVC?
+    
+    func test_number_validation() {
+        let nm = 100
+        let nm1 = 0
+        XCTAssertLessThan(99, nm)
+        XCTAssertGreaterThan(1, nm1)
+       }
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

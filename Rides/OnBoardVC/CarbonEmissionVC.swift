@@ -32,7 +32,7 @@ class CarbonEmissionVC: UIViewController {
        }
        else if recievedMileage.kilometrage! > 5000{
            let km = recievedMileage.kilometrage!
-           var carbon = Double(km) * 1.5
+           let carbon = Double(km) * 1.5
            self.messageLBl.text = String(carbon)
            self.mMstxt.text = "1.5 unit of carbon is emitted per kilometre"
        }

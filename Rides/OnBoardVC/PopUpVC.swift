@@ -6,45 +6,28 @@
 //
 
 import UIKit
-
 protocol SortCarsDelegateVC :AnyObject {
     func search(carType:String?)
-    
 }
 
 class PopUpVC: UIViewController {
     var delegate : SortCarsDelegateVC?
-    
     var ArrCarType = ["SUV","Coupe","Passenger Van","Minivan","Convertible","Cargo Van","Hatchback","Wagon","Extended Cab Pickup","Crew Cab Pickup","Regular Cab Pickup"]
     @IBOutlet weak var mTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
     @IBAction func backBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-
 }
 extension PopUpVC:UITableViewDelegate,UITableViewDataSource{
-   
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return ArrCarType.count    }
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
-   
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = mTableView.dequeueReusableCell(withIdentifier: "PopUpCellVC", for: indexPath) as! PopUpCellVC
         let data = ArrCarType[indexPath.row]
         cell.mView.layer.cornerRadius = 5
@@ -66,12 +49,7 @@ extension PopUpVC:UITableViewDelegate,UITableViewDataSource{
     }
     
 }
-
-
-
 class PopUpCellVC : UITableViewCell{
-    
-    
     @IBOutlet weak var mLabel: UILabel!
     @IBOutlet weak var mView: UIView!
     
