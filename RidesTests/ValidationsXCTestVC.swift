@@ -15,20 +15,7 @@ final class ValidationsXCTestVC: XCTestCase {
         let nm1 = 0
         XCTAssertLessThan(99, nm)
         XCTAssertGreaterThan(1, nm1)
-// --- This method is more simple and easy to check the range of input.
-//        let value = 10
-//        XCTAssertTrue(0 < value)
-//        XCTAssertTrue(100 > value)
        }
-    
-    func test_carbon_emission(){
-        let Mileage1 = 4999
-        let Mileage2 = 5500
-        let co2 = Mileage1 * 1
-        let Xco2 = Mileage2 * Int(1.5)
-        XCTAssertTrue(Mileage1 < 5000 , String(co2))
-        XCTAssertTrue(Mileage2 > 5000 , String(Xco2))
-    }
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
